@@ -16,7 +16,7 @@ const defaultMenu = {
   header: '╭─────≼ %category ≽',
   body: '╎≡ %cmd',
   footer: '╰┄┄┄┄┄┄┄┄┄┄┄┄┄〢',
-  after: 'BOBIZA 👑',
+  after: '♕𝙎𝙃𝙄𝙆𝘼🐥♕',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
@@ -178,9 +178,9 @@ let tags = {
 	contextInfo: {
 	externalAdReply: {
 	title: 'قسم خاص  بالتخيل والرسم بالذكاء الاصطناعي',
-	body: 'اليك الاوامر الخاصة بهذا القسم',
-	thumbnailUrl: 'https://telegra.ph/file/22455a32e324068fa1922.jpg',
-	sourceUrl: 'instagram.com/noureddine_ouafy',
+	body: '*اوامــر القســم المطلـــوب💠*',
+	thumbnailUrl: 'https://telegra.ph/file/11c4a2364dfcaebeb096f.jpg',
+	sourceUrl: 'https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==',
 	mediaType: 1,
 	renderLargerThumbnail: true
 	}}})
