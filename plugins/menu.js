@@ -33,7 +33,7 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك*\n+212717457920',
+  after: '*بــوت تابـع لشيــكا(يمنــع سب البــوت او استخــدامه بطــريقه خاطئــه🤝🏻)*\n+201005603546',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -136,10 +136,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: 'BOBIZA BOT ♥',
-body: "أول بوت واتساب في العالم العربي 💖",
-thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
-sourceUrl: 'https://instagram.com/noureddine_ouafy',
+title: '♕𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ♕',
+body: "ميســي عمــك🐐",
+thumbnailUrl: 'https://telegra.ph/file/11c4a2364dfcaebeb096f.jpg',
+sourceUrl: 'https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
@@ -156,9 +156,9 @@ renderLargerThumbnail: true
     throw e
   }
 }
-handler.help = ['menu']
+handler.help = ['menu','اوامر','الاوامر']
 handler.tags = ['infobot']
-handler.command = ['menu','b','list'] 
+handler.command = ['menu','b','list','اوامر','الاوامر'] 
 handler.register = false
 
 
