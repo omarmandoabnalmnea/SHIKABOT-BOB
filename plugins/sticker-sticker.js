@@ -24,7 +24,7 @@ stiker = await createSticker(false, args[0], '', author, 20)
 stiker = 'رجاء قم بالاشارة للصورة التي تريد أن تحولها لملصق و اكتب الامر \n *.ملصق*'	
 } finally {
 m.reply(stiker)}}
-handler.help = ['sticker','ملصق']
+handler.help = ['ملصق']
 handler.tags = ['sticker','ملصق']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
 export default handler
