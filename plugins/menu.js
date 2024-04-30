@@ -28,7 +28,7 @@ const defaultMenu = {
 ⏰ *مـدة التشغيــل:* %muptime  
 ┗━━━━━━━━━━⬣
 %readmore
-  ≡ *𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ | M E N U*
+  ≡ *𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ |اوامــ📜ــر*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
@@ -156,7 +156,7 @@ renderLargerThumbnail: true
     throw e
   }
 }
-handler.help = ['menu','اوامر','الاوامر']
+handler.help = ['الاوامر']
 handler.tags = ['infobot']
 handler.command = ['menu','b','list','اوامر','الاوامر'] 
 handler.register = false
