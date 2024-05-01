@@ -20,7 +20,7 @@ global.owner = [
 global.suittag = ['201005603546'];
 global.prems = ['201005603546'];
 
-global.packname = '♕𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ♕';
+global.packname = '𝐒𝐓𝐎𝐑𝐌『🃏』𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒';
 global.author = '♕𝙎𝙃𝙄𝙆𝘼🐥♕';
 global.wm = '♕𝙎𝙃𝙄𝙆𝘼🐥♕';
 global.titulowm = '♕𝙎𝙃𝙄𝙆𝘼🐥♕';
