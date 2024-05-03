@@ -18,7 +18,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   catch (e) {
     m.reply(e + '')
     text = args.join(' ')
-    if (!text) throw `تحويل نص لــأوديو لجميع اللغات \n\nمثال نكتب هكذا اذا اردنا ان نحصل على صوت عربي :\n\n ${usedPrefix}${command} ar مرحبا انا شيكا بوت `
+    if (!text) throw `تحويل نص لصوت لجميع اللغات \n\nمثال بنكتب كدا لو عايزين نحصل على صوت عربي :\n\n ${usedPrefix}${command} ar اي ياحب انا شيكا بوت 🦦`
     res = await tts(text, defaultLang)
   } finally {
     if (res) await conn.sendFile(m.chat, res, '', '', m, true)
@@ -26,7 +26,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 }
 handler.help = ['انطق']
 handler.tags = ['tools']
-handler.command = /^tts|audio$/i
+handler.command = /^انطق|audio$/i
 
 export default handler
 
