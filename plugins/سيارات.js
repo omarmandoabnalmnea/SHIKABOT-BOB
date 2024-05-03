@@ -11,10 +11,10 @@ let handler = async (m, { conn, command, usedPrefix }) => {
     let src = await (await fetch('https://gist.githubusercontent.com/ggbot564/de6999400bb50eecd7b5f65f67f66786/raw/dd9a5a3cf73fc6bd67c04b3f1a88eea0f049f1db/cars')).json()
   let json = src[Math.floor(Math.random() * src.length)]
     let caption = `*${command.toUpperCase()}*
-  ❐↞┇الـوقـت⏳↞ *${(timeout / 1000).toFixed(2)} ┇
- استخدم .انسحب للأنسحاب
+* ❐↞┇الـوقـت⏳↞* *${(timeout / 1000).toFixed(2)} ┇
+*استخدم .انسحب للأنسحاب*
   ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
-『killua-bot』
+*╌─━┇『𝚂𝙷𝙸𝙺𝙰ᴮᴼᵀ🐥』┇━─╌*
      `.trim()
     conn.tebakbendera[id] = [
         await conn.sendFile(m.chat, json.img, '', caption, m),
