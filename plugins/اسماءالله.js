@@ -5,7 +5,7 @@ const anjuran = `
 عن ابي هريره رضي الله عنه قال رسول الله صلي اله عليه وسلم : "إِنَّ لِلَّهِ تَعَالَى تِسْعَةً وَتِسْعِينَ اسْمًا، مِائَةٌ إِلَّا وَاحِدًا، مَنْ أَحْصَاهَا دخل الجنة، وهو وتر يُحِبُّ الْوِتْرَ".`
 
 let handler = async (m, { args, usedPrefix, command }) => {
-    let json = JSON.parse(JSON.stringify(global.asmaulhusna))
+    let json = JSON.parse(JSON.stringify(global.اسماءالله))
     let data = json.map((v, i) => `${i + 1}. ${v.latin}\n${v.arabic}\n${v.translation_id}`).join('\n\n')
     if (isNaN(args[0])) throw `هذا الأمر يعطيك اسماء الله الحسنى + معناها ♥ \nمثال:\n${usedPrefix + command} 1\n`
     if (args[0]) {
@@ -23,7 +23,7 @@ handler.tags = ['islam']
 handler.command = /^asmaeallah$/i
 export default handler
 
-global.asmaulhusna = [
+global.اسماءالله = [
     {
         index: 1,
         arabic: "الاسم :الرَّحْمَنُ",
