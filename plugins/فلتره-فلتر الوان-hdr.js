@@ -18,7 +18,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error;
 				try {
 					const This = await processing(img, "فلتره");
-					conn.sendFile(m.chat, This, "*انستا المطور لو احتجت حاجه🐥 https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==*", " instagram.com/noureddine_ouafy ...", m);
+					conn.sendFile(m.chat, This, "*https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA== انستا المطور لو احتجت حاجه🐥...*", " 『https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==...』", m);
 				} catch (er) {
 					error = true;
 				} finally {
@@ -29,7 +29,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				}
 			}
 			break;
-		case "recolor":
+		case "فلتر-الوان":
 			{
 				conn.recolor = conn.recolor ? conn.recolor : {};
 				let q = m.quoted ? m.quoted : m;
@@ -44,7 +44,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error;
 				try {
 					const This = await processing(img, "فلتر-الوان");
-					conn.sendFile(m.chat, This, "*نصيحه-لو انت حاسس انو الدنيا جايه عليك البس بوكسر الشاذلي وريح الي بين رجليك ودا الانستا بتاعي لمزيد من الحكم والنصايح🦦 https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==*", " https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA== ...", m);
+					conn.sendFile(m.chat, This, "* نصيحهhttps://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==-لو انت حاسس انو الدنيا جايه عليك البس بوكسر الشاذلي وريح الي بين رجليك ودا الانستا بتاعي لمزيد من الحكم والنصايح🦦 *", "『https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==...』", m);
 				} catch (er) {
 					error = true;
 				} finally {
