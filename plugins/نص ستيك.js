@@ -32,8 +32,8 @@ if (command == 'ttp') {
 conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
     
 }
-handler.command = handler.help = ['attp']
-handler.tags = ['sticker']
+handler.command = handler.help = ['نص-ستيك']
+handler.tags = ['الملصقات']
 export default handler
 
 async function createSticker(img, url, packName, authorName, quality) {
