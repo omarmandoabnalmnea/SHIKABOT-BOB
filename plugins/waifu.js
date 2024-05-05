@@ -13,9 +13,9 @@ let handler = async (m, {
     if (!res.ok) throw await res.text()
     let json = await res.json()
     if (!json.url) throw 'Error!'
-    await conn.sendFile(m.chat, json.url, null, "- B O B I Z A -", m)
+    await conn.sendFile(m.chat, json.url, null, "ممنــوعات ياصاحبـي🔥🐥", m)
 }
-handler.help = ['waifu']
+handler.help = ['وايفو']
 handler.tags = ['anime']
-handler.command = /^(waifu)$/i
+handler.command = /^(وايفو)$/i
 export default handler
