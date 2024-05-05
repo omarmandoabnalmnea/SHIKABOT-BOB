@@ -18,7 +18,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error;
 				try {
 					const This = await processing(img, "فلتره");
-					conn.sendFile(m.chat, This, "*https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA== انستا المطور لو احتجت حاجه🐥...*", " 『https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==...』", m);
+					conn.sendFile(m.chat, This, "*https://instagram.com/shika17sm انستا المطور لو احتجت حاجه🐥...*", " 『https://instagram.com/shika17sm...』", m);
 				} catch (er) {
 					error = true;
 				} finally {
@@ -35,7 +35,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let q = m.quoted ? m.quoted : m;
 				let mime = (q.msg || q).mimetype || q.mediaType || "";
 				if (!mime)
-					throw `ابعت اي صوره وانا هبعبصلك في الالوان🦦\n\nابعت الصوره الاول ومنشن عليها🗿 \n*.فلتر-الوان*`;
+					throw `ابعت اي صوره وانا هروق عل الالوان🦦\n\nابعت الصوره الاول ومنشن عليها🗿 \n*.فلتر-الوان*`;
 				if (!/image\/(jpe?g|png)/.test(mime))
 					throw `Mime ${mime} tidak support`;
 				else conn.recolor[m.sender] = true;
@@ -44,7 +44,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error;
 				try {
 					const This = await processing(img, "فلتر-الوان");
-					conn.sendFile(m.chat, This, "* نصيحهhttps://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==-لو انت حاسس انو الدنيا جايه عليك البس بوكسر الشاذلي وريح الي بين رجليك ودا الانستا بتاعي لمزيد من الحكم والنصايح🦦 *", "『https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==...』", m);
+					conn.sendFile(m.chat, This, "* نصيحهhttps://instagram.com/shika17sm انت حاسس انو الدنيا جايه عليك البس بوكسر الشاذلي وريح الي بين رجليك ودا الانستا بتاعي لمزيد من الحكم والنصايح🦦 *", "『https://instagram.com/shika17sm...』", m);
 				} catch (er) {
 					error = true;
 				} finally {
@@ -70,7 +70,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error;
 				try {
 					const This = await processing(img, "enhance");
-					conn.sendFile(m.chat, This, "الانستا بتاعي ياحته🔥 https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA==", " https://www.instagram.com/shika17sm?igsh=MTM2YTJ5Ynh6dTUwcA== ...", m);
+					conn.sendFile(m.chat, This, "الانستا بتاعي ياحته🔥 https://instagram.com/shika17sm", " https://instagram.com/shika17sm...", m);
 				} catch (er) {
 					error = true;
 				} finally {
