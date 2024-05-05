@@ -24,8 +24,8 @@ let handler = async (m, { conn, command, usedPrefix }) => {
         }, timeout)
     ]
 }
-handler.help = ['شخصيه']
+handler.help = ['سؤال']
 handler.tags = ['game']
-handler.command = /^شخصيه/i
+handler.command = /^سؤال/i
 
 export default handler
