@@ -24,5 +24,5 @@ await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimet
 } catch {
 await conn.reply(m.chat, 'فشـل التحميـل يامنحــوس🦦', m)}
 }}
-handler.command = /^فيديو|yt|يوتيوب$/i
+handler.command = /^فيديو|يوتيوب$/i
 export default handler
