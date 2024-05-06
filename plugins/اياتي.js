@@ -16,7 +16,7 @@ conn.qurannData = conn.qurannData ? conn.qurannData : {};
 
   const surahNumber = parseInt(m.text.split(' ')[1]);
   if (isNaN(surahNumber) || surahNumber < 1 || surahNumber > 114) {
-    m.reply("❌ رقم السورة غير صحيح. يرجى تقديم رقم سورة صالح بين 1 و 114.\n مثال : \n .ايات 114");
+    m.reply("❌ رقم السورة غير صحيح. يرجى تقديم رقم سورة صالح بين 1 و 114.\n مثال : \n .اياتي 114");
     return;
   }
 
@@ -50,7 +50,7 @@ if (m.isBaileys || !(m.chat in conn.qurannData)) return;
   const index = parseInt(input);
 
   if (isNaN(index) || index < 1 || index > list.length) {
-    m.reply("❌ رقم الآية غير صحيح. يرجى تقديم رقم آية صالح من القائمة.\nمثال :\n .ayati 1");
+    m.reply("❌ رقم الآية غير صحيح. يرجى تقديم رقم آية صالح من القائمة.\nمثال :\n .اياتي 1");
   } else {
   const selectedObj = list[index - 1];
 
@@ -69,8 +69,8 @@ if (m.isBaileys || !(m.chat in conn.qurannData)) return;
   }
 };
 
-handler.help = ["ايات"];
+handler.help = ["اياتي"];
 handler.tags = ["الاسلام"];
-handler.command = /^ايات$/i;
+handler.command = /^اياتي$/i;
 
 export default handler;
