@@ -4,8 +4,8 @@ import fetch from 'node-fetch'
 import cheerio from 'cheerio'
 
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `*يمكنك تحميل صور داك جودة عالية وممتازة من منصة pinterest عبر كتابة الامر متبوعا باسم الصورة التي تريد تحميلها مثال*\n\n*${usedPrefix + command} صورة الكون*`
-  conn.reply(m.chat, '*انتظر قليلا يا عزيزي ...*', m)
+  if (!text) throw `* *\n\n*${usedPrefix + command} صورة عمك ميسي🦦*`
+  conn.reply(m.chat, '*🐤اصبـر ياحب بتـنزل ...*', m)
 
   try {
     const hasil = await pinterest(text);
@@ -31,13 +31,13 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     }
   } catch (e) {
     console.log(e)
-    conn.reply(m.chat, 'حدث خطأ أثناء تنزيل الصورة.', m)
+    conn.reply(m.chat, '*معرفتـش انزلهـا🦦*.', m)
   }
 }
 
-handler.help = ['pinterest3']
+handler.help = ['بينت10']
 handler.tags = ['downloader']
-handler.command = /^pinterest3$/i
+handler.command = /^بينت10$/i
 
 export default handler
 
