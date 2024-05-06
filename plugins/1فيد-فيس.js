@@ -6,7 +6,7 @@ import cheerio from 'cheerio'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
-    if (!args[0]) throw 'تحميل فيديوهات الفيسبوك مثال \n\n*.facebook4* https://www.facebook.com/100063533185520/posts/pfbid02wqHMWsNBLWHdLuGHrg1hBvS43FVgky89HY7hzcuvrCfD1j9oBTq4uHfUrMCLshZal';
+    if (!args[0]) throw '*فين الرابط بتاع الفيديو🦦*\n;
     const sender = m.sender.split(`@`)[0];
 
     m.reply(wait)
@@ -16,18 +16,18 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         const result = await fbdown(url);
 
         if (!result) {
-            throw 'حصلت مشكلة اثناء عملية استيراد المعلومات';
+            throw '*مش عارف انزلو🥸*';
         }
 
         const videoBuffer = await fetch(result.hdLink).then(res => res.buffer());
 
         const caption = `
-*عنوان الفيديو*: ${result.title}
+*📍عنوان الفيديو*: ${result.title}
 
 ${result.description}
 
-*رابط الفيديو بجودة متوسطة*\n: ${result.sdLink}
-*رابط الفيديو بجودة عالية*: \n${result.hdLink}
+*🔗رابط الفيديو بجودة متوسطة*\n: ${result.sdLink}
+*🔗رابط الفيديو بجودة عالية*: \n${result.hdLink}
 `;
 
         await conn.sendMessage(
@@ -35,7 +35,7 @@ ${result.description}
             video: videoBuffer,
             mimetype: "video/mp4",
             fileName: `video.mp4`,
-            caption: `هذا هو الفيديو الخاص بك @${sender} \n${caption}`,
+            caption: `*الفيديو بتاعك ياحب* @${sender} \n${caption}`,
             mentions: [m.sender],
         }, {
             quoted: m
@@ -47,9 +47,9 @@ ${result.description}
     }
 };
 
-handler.help = ['facebook4']
+handler.help = ['فيد-فيس']
 handler.tags = ['downloader']
-handler.command = /^facebook4$/i
+handler.command = /^فيد-فيس$/i
 
 export default handler
 
