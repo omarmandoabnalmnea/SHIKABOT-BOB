@@ -5,7 +5,7 @@ let handler = async (m, {
 }) => {
     await conn.sendMessage(m.chat, {
         react: {
-            text: '😍',
+            text: '🫦',
             key: m.key,
         }
     })
@@ -13,9 +13,9 @@ let handler = async (m, {
     if (!res.ok) throw await res.text()
     let json = await res.json()
     if (!json.url) throw 'Error!'
-    await conn.sendFile(m.chat, json.url, null, "- B O B I Z A -", m)
+    await conn.sendFile(m.chat, json.url, null, "عجبتــك صح🦦🫦", m)
 }
-handler.help = ['animepic']
+handler.help = ['بنت']
 handler.tags = ['anime']
-handler.command = /^(animepic)$/i
+handler.command = /^(بنت)$/i
 export default handler
