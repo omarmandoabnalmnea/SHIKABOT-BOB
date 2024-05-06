@@ -38,8 +38,8 @@ let stiker = false
      await conn.sendFile(m.chat, out, 'tovid.mp4', 'تم عملية تحويل الملصق لفيديو بنجاح \n تابعني في الانستغرام\ninstagram.com/noureddine_ouafy' , m)
 }
 //lo mau apa??
-handler.help = ['tovideo']
+handler.help = ['لملصق']
 handler.tags = ['sticker']
-handler.command = /^tovideo$/i
+handler.command = /^لملصق$/i
 
 export default handler
