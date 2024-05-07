@@ -16,7 +16,7 @@ ${listAdmin}
 *[ ⚠ ️] الامـر لاستـدعاء الادمـن في حـال حدوث مشـاكل والحالات الطـارئه فقط!!*`.trim()
 conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
-handler.help = ['admins <texto>']
+handler.help = ['ادمن <texto>']
 handler.tags = ['group']
 handler.command = /^(admins|مشرفين|الادمنز|المشرفين|الادمن)$/i
 handler.group = true
