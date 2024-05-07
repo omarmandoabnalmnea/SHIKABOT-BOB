@@ -9,7 +9,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
     }
     let src = await (await fetch('https://raw.githubusercontent.com/mohamedkun15/TheMystic-Bot-MD/master/src/JSON/Kora.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
-    let caption = `*╭━━━[ *${command.toUpperCase()}*  ]━━━━⬣*
+    let caption = `*╭━━━[ ${command.toUpperCase()} ]━━━━⬣*
 ┃❐↞┇الـوقـت⏳↞ *${(timeout / 1000).toFixed(2)} ┇
   *🦦لو مش عارف الاجابه قول استخدم.معرفش*
   ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
@@ -19,7 +19,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
         await conn.sendFile(m.chat, json.img, '', caption, m),
         json, poin,
         setTimeout(() => {
-            if (conn.tebakbendera[id]) conn.reply(m.chat, `❮ ⌛┇انتهي الوقت┇⌛❯\n❐↞┇الاجـابـة✅↞ ${json.name}*┇╰━━━〔 *🛡️ 1.4.9* 〕━━━━━⬣`, conn.tebakbendera[id][0])
+            if (conn.tebakbendera[id]) conn.reply(m.chat, `❮ ⌛┇انتهي الوقت┇⌛❯\n❐↞┇الاجـابـة✅↞ ${json.name}*┇╰━━━〔 *♕𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ♕* 〕━━━━━⬣`, conn.tebakbendera[id][0])
             delete conn.tebakbendera[id]
         }, timeout)
     ]
