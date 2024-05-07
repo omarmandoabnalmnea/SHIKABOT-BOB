@@ -1,6 +1,6 @@
 import { googleImage } from '@bochilteam/scraper'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `*[❗خطاء❗] مثال عشـان تفهم ياغبي🦦 ${usedPrefix + command} شيكامارو*`
+if (!text) throw `*❗خطاء مثال عشـان تفهم ياغبي🦦 ${usedPrefix + command} شيكامارو*`
 if (m.text.includes('gore') || m.text.includes('cp')|| m.text.includes('porno')|| m.text.includes('Gore')|| m.text.includes('rule')|| m.text.includes('CP')|| m.text.includes('Rule34')) return m.reply('[❗خطاء❗] لا يمكنني إرسال هذا المحتوى ، المجموعة محظورة \n إذا كنت مشرفًا وتريد تنشيطها ، اخبر المطور')  
 const res = await googleImage(text)
 let image = await res.getRandom()
