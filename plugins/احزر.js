@@ -9,11 +9,11 @@ let handler = async (m, { conn, command, usedPrefix }) => {
     }
     let src = await (await fetch('https://raw.githubusercontent.com/mohamedkun15/TheMystic-Bot-MD/master/src/JSON/Manga.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
-    let caption = `*╭━━━[ *${command.toUpperCase()}* ]━━━━⬣
+    let caption = `*╭━━━[ ${command.toUpperCase()} ]━━━━⬣*
 ┃❐↞┇الـوقـت⏳↞ *${(timeout / 1000).toFixed(2)} ┇
-  *لو مش عارف الاجابه قول استخدم.معرفش*
+  *🦦لو مش عارف الاجابه قول استخدم.معرفش*
   ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
-*╌─━┇『𝚂𝙷𝙸𝙺𝙰ᴮᴼᵀ🐥』┇━─╌*
+‌⎔ ━ • 𓆩♕𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ♕𓆪• ━ ⎔
      `.trim()
     conn.tebakbendera[id] = [
         await conn.sendFile(m.chat, json.img, '', caption, m),
