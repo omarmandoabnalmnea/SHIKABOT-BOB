@@ -104,6 +104,16 @@ let handler = m => m;
      responses = [ 
        '*منور✨*',  
      ];
+    }else if (/^بص$/i.test(m.text)) { 
+     responses = [ 
+'*في الكـ..🌚*', 
+     '*تعالا مص 🙄*' 
+     ];  
+        }else if (/^احا$/i.test(m.text)) { 
+     responses = [ 
+'*لف افتحها🦦*', 
+     '*احتيـين عل احتـك🐤*', 
+     ];  
    }
    if (responses) { 
      let randomIndex = Math.floor(Math.random() * responses.length); 
