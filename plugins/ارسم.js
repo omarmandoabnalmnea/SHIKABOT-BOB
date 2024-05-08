@@ -16,8 +16,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
       }
     }
 
-handler.help = ['رسم']
+handler.help = ['ارسم']
 handler.tags = ['drawing']
-handler.command = /^(رسم)$/i
+handler.command = /^(ارسم)$/i
 
 export default handler
