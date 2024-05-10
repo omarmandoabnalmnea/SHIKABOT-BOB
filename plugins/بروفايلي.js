@@ -19,7 +19,7 @@ let handler = async (m, { conn }) => {
 ${readMore}
 *طلب:* ${registered ? 'Terdaftar': 'لا'}
 *مميز:* ${premium ? "نعم" :"لا"}
-*وقت مميز:* 
+*وقت مميز: * 
 ${clockString(user.premiumTime)}
 `.trim()
    await conn.sendFile(m.chat, pp, '', str, m)
