@@ -1,22 +1,18 @@
-Thank you to
-▇BrunoSobrino ♥
-▇malik ♥
-▇Guru322 ♥
-▇elrebelde21 ♥
-▇KatashiFukushima ♥
-▇ruhend2001 ♥
-▇gata ♥
-▇and others 😁
-لا أتقن أي لغة برمجة لذا ان اخطأت فلا عذر لي لا نزال في طريق التعلم ... رغم ذلك أهوى التعديل على السكريبتات ههه ♥ اتمنى انك استفذت 
-اي ملاحطة او مساعدة انا هنا
+‌⎔ ━ • 𓆩♕𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ♕𓆪• ━ ⎔
 
-https://instagram.com/noureddine_ouafy
+*𖣘「 معلومات مطــور البــوت 」*
 
-get session code from this link
+*𓆩♕𝙎𝙃𝙄𝙆𝘼🐥♕𓆪*
 
-https://replit.com/@bobiztestbot/bobiza-qrcode
+*instagram🔅:*
+*『 https://instagram.com/shika17sm 』*
 
-Im not a dev bot just copy and past 😆 i steel leaning but it's haaaard 😸
- 
-heroku tutorial video :
-https://youtu.be/ypyLVUpK-zc?si=_pRpNkABjo-4_eGG
+*whatsapp🪀:*
+*『 https://wa.me/+201005603546 』*
+
+*facebook🌀:*
+*『 https://www.facebook.com/profile.php?id=61553389993606& 』*
+
+*support🖲️ :* 
+*『 https://chat.whatsapp.com/LTYJY1nZnpl0GgcKGQPnw6 』*
+*————————————————* *ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*
