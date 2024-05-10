@@ -13,18 +13,17 @@ let handler = async (m, {
 
     let lister = [
         "بحث",
-        "فصول",
-        "pdf"
+        "فصل",
+        "تحميل"
     ]
 
     let [feature, inputs] = text.split("|")
-    if (!lister.includes(feature)) return m.reply ("اكتـب المـانجا الي انـت عايـزها وهحملهـالك بصيغـــةpdf \n\n```.مانجا بحث|naruto```\n\n\n*الأوامر الـي هتستخـدمهـا في الأمر*\n" + lister.map((v, index) => "  ○ " + v).join("\n"))
+    if (!lister.includes(feature)) return m.reply("*ابحـث وهمحــلك المـانجا الي انـت عايـزها بصيـغة pdf🦦*\n\n```.مانجا بحث|اسم المانجا```\n\n\n*الأوامـر الـي هتستعملهــا في الامـر*\n" + lister.map((v, index) => "  ○ " + v).join("\n"))
 
     if (lister.includes(feature)) {
 
-if (feature == "بحث") {
-            if (!inputs) return ```مثـال: .مانجا بحث|narouto```")
-            await m.reply(wait)m.reply("\n```Exemple: .manga search|naruto```")
+        if (feature == "search") {
+            if (!inputs) return m.reply("\n```مثــال: .مانجا بحث| اسم المانجا```")
             await m.reply(wait)
             try {
                 let res = await search3asq(inputs)
@@ -37,9 +36,8 @@ if (feature == "بحث") {
             }
         }
 
-
-        if (feature == "فصول") {
-            if (!inputs) return m.reply("```مثــال: مانجا فصول|الرابط الي اخدتو من البحث```")
+        if (feature == "فصل") {
+            if (!inputs) return m.reply("```مثــال: .مانجا فصل|رابــط المـانجا```")
             await m.reply(wait)
             try {
                 let res = await getAllChapters(inputs)
@@ -52,8 +50,8 @@ if (feature == "بحث") {
             }
         }
 
-        if (feature == "pdf") {
-            if (!inputs) return m.reply("```مثــال: .مانجا pdf|رابط الفصل```")
+        if (feature == "تحميل") {
+            if (!inputs) return m.reply("```مثــال: .مانجا تحميل|رابط الفصـل```")
             await m.reply(wait)
             try {
                 let data = await getChapterPdf(inputs)
@@ -109,7 +107,7 @@ async function getAllChapters(url) {
       views: $(element).find('.view').text().trim(),
     })).get();
   } catch (error) {
-    console.error('حدث خطأ أثناء جلب البيانات:', error);
+    console.error('Error fetching data:', error);
     throw error;
   }
 }
@@ -147,7 +145,7 @@ async function getChapterPdf(url) {
 
     return new Promise((resolve) => pdfStream.on('end', () => resolve(Buffer.concat(buffers))));
   } catch (error) {
-    console.error('حدث خطأ أثناء جلب البيانات:', error);
+    console.error('Error fetching data:', error);
     throw error;
   }
 };
