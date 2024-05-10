@@ -369,14 +369,14 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '👋 ¡Welcome/to!\n@user';
-  conn.bye = '👋 ¡See you later!\n@user';
-  conn.spromote = '*[ ℹ️ ] @user He was promoted to administrator.*';
-  conn.sdemote = '*[ ℹ️ ] @user He was demoted from administrator.*';
-  conn.sDesc = '*[ ℹ️ ] The group description has been modified.*';
-  conn.sSubject = '*[ ℹ️ ] The group name has been changed.*';
-  conn.sIcon = '*[ ℹ️ ] The group profile photo has been changed.*';
-  conn.sRevoke = '*[ ℹ️ ] The group invite link has been reset.*';
+  conn.welcome = '🐥 منـــور يارايــق/to!\n@user';
+  conn.bye = 'اخيــرا طلـع دا عيـل بضـان 🗿💔\n@user';
+  conn.spromote = '*[ ℹ️ ] @user مبــروك ياحـب روح شـوف شغـلك بقـا عشـان ماتخـدش اعفـاء🦦.*';
+  conn.sdemote = '*[ ℹ️ ] @user مـش قولتلـك شـوف شغلـك عشـان ماتخـدش اعفـاء ابلـع بقـا😂🦦.*';
+  conn.sDesc = '*[ ℹ️ ] وصـف الجـروب اتغيـر روحـو شوفـوه🦦.*';
+  conn.sSubject = '*[ ℹ️ ] اي رايكـم في اسـم الجـروب الجديـد 🐥.*';
+  conn.sIcon = '*[ ℹ️ ] صـورة الحـروب الحديـده فخمـه صح🦦.*';
+  conn.sRevoke = '*[ ℹ️ ] رابـط الجـروب اتغيـر 🦦.*';
 
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
