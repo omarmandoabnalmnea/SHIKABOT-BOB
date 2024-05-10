@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
     let tagUser = '@' + m.sender.split("@s.whatsapp.net")[0];
     let more = String.fromCharCode(8206);
     let teks = `${pickRandom([`
-*╭──𓆩♕𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ♕𓆪──╮*
+*‌   ╭──𓆩♕𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ♕𓆪──╮*
 *⌬ اهلا ياحـب معـك:-*
 *⎊『♕شيكـا 🐥 بوت♕』*
 *• ━ ──⎔*
@@ -59,6 +59,7 @@ let handler = async (m, { conn }) => {
 *☬↫〔صداقه 🧑🏻👩🏻〕*
 *☬↫〔حب 👩‍❤️‍👨〕*
 *☬↫〔زوجني 🫂〕*
+*☬↫〔تحدي ✂️📑〕*
 *☬↫〔اكس ❌⭕〕*
 *┇• ━ ──⎔ 『الترفيــه 📍』*
 
