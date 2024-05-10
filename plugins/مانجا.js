@@ -22,7 +22,7 @@ let handler = async (m, {
 
     if (lister.includes(feature)) {
 
-        if (feature == "search") {
+        if (feature == "بحث") {
             if (!inputs) return m.reply("\n```مثــال: .مانجا بحث| اسم المانجا```")
             await m.reply(wait)
             try {
