@@ -1,10 +1,10 @@
 import { pinterest } from '@bochilteam/scraper'
 
 let handler = async(m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*عايـز صورة اي ياحـب وياريت اكتـ طلبـك بالانجليـزي🦦*\n📌 مثال  : ${usedPrefix + command} shikamaru`
+  if (!text) throw `*اي الصــوره الي عايـزني اجيبهـالك🦦*\n\n*📌 مثــال  : ${usedPrefix + command} جورجينـان🫠*`
   const json = await pinterest(text)
   conn.sendFile(m.chat, json.getRandom(), 'pinterest.jpg', `
-*▢ صورتك ياحب🐥🪩:*  ${text}
+*▢  Pinterest:*  ${text}
 `.trim(), m)
 }
 handler.help = ['بينت']
