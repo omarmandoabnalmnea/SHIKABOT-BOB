@@ -22,8 +22,9 @@ let handler = async (m, {
 
     if (lister.includes(feature)) {
 
-        if (feature == "بحث") {
-            if (!inputs) return m.reply("\n```مثـال: . مانجا بحث|narouto```")
+if (feature == "بحث") {
+            if (!inputs) return ```مثـال: .مانجا بحث|narouto```")
+            await m.reply(wait)m.reply("\n```Exemple: .manga search|naruto```")
             await m.reply(wait)
             try {
                 let res = await search3asq(inputs)
@@ -35,6 +36,7 @@ let handler = async (m, {
                 await m.reply('error')
             }
         }
+
 
         if (feature == "فصول") {
             if (!inputs) return m.reply("```مثــال: مانجا فصول|الرابط الي اخدتو من البحث```")
