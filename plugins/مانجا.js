@@ -72,9 +72,9 @@ let handler = async (m, {
 
     }
 }
-handler.help = ["مانجا"]
+handler.help = ["منجا"]
 handler.tags = ["anime"]
-handler.command = /^(مانجا)$/i
+handler.command = /^(منجا)$/i
 export default handler
 
 /* New Line */
