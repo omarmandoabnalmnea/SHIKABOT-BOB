@@ -20,6 +20,6 @@ let handler = async (m, { command, text }) => m.reply(`*╔═╼─╾─╾═
 
 handler.help = ['استقبال']
 handler.tags = ['استمارة استقبال']
-handler.command = /^(الاستماره|1|استماره\استمارة)$/i
+handler.command = /^(الاستماره|1|استماره|استمارة)$/i
 
 export default handler
