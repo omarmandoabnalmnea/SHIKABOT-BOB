@@ -1,38 +1,24 @@
-import fs from 'fs';
-
-let timeout = 60000;
-let poin = 500;
-
-let handler = async (m, { conn, usedPrefix }) => {
-    conn.tekateki = conn.tekateki ? conn.tekateki : {};
-    let id = m.chat;
-    if (id in conn.tekateki) {
-        conn.reply(m.chat, '❐┃لم يتم الاجابة علي السؤال بعد┃❌ ❯', conn.tekateki[id][0]);
-        throw false;
+import similarity from 'similarity'
+const threshold = 0.72
+let handler = m => m
+handler.before = async function (m) {
+    let id = m.chat
+    if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^/i.test(m.quoted.text)) return !0
+    this.tekateki = this.tekateki ? this.tekateki : {}
+    if (!(id in this.tekateki)) return
+    if (m.quoted.id == this.tekateki[id][0].id) {
+        let json = JSON.parse(JSON.stringify(this.tekateki[id][1]))
+        if (m.text.toLowerCase() == json.response.toLowerCase().trim()) {
+            global.db.data.users[m.sender].exp += this.tekateki[id][2]
+            m.reply(`*❆━━━═⏣⊰🦇⊱⏣═━━━❆*\n\n*اجـابـة صـحـيـحـة*\n\n*الـجـائـزة💰↞ ${this.tekateki[id][2]} نقطة*\n\n*❆━━━═⏣⊰🦇⊱⏣═━━━❆*`)
+            clearTimeout(this.tekateki[id][3])
+            delete this.tekateki[id]
+        } else if (similarity(m.text.toLowerCase(), json.response.toLowerCase().trim()) >= threshold) m.reply(`اقتربت من الاجابة!`)
+        else m.reply('*❆━━━═⏣⊰🦇⊱⏣═━━━❆*\n\n*اجابة خاطئة*\n\n*❆━━━═⏣⊰🦇⊱⏣═━━━❆*')
     }
-    let tekateki = JSON.parse(fs.readFileSync(`./src/game2/miku.json`));
-    let json = tekateki[Math.floor(Math.random() * tekateki.length)];
-    let _clue = json.response;
-    let clue = _clue.replace(/[A-Za-z]/g, ''); // Fixed this line
-    let caption = `
-ⷮ ${json.question}
+    return !0
+}
 
-❐↞┇الـوقـت⏳↞ ${(timeout / 1000).toFixed(2)}┇
-❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
-‌⎔ ━ • 𓆩♕𝙎𝙃𝙄𝙆𝘼🐥ᵇᵒᵗ♕𓆪• ━ ⎔
-`.trim();
-    conn.tekateki[id] = [
-       await conn.reply(m.chat, caption, m),
-        json, poin,
-        setTimeout(async () => {
-            if (conn.tekateki[id]) await conn.reply(m.chat, `❮ ⌛┇انتهي الوقت┇⌛❯\n ❐↞┇الاجـابـة✅↞ ${json.response}┇`, conn.tekateki[id][0]);
-            delete conn.tekateki[id];
-        }, timeout)
-    ];
-};
+handler.exp = 0
 
-handler.help = ['كت'];
-handler.tags = ['game'];
-handler.command = /^(كت)$/i;
-
-export default handler;
+export default handler
