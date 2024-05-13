@@ -1,7 +1,6 @@
 import yts from 'yt-search';
 import fs from 'fs';
 
-await conn.sendMessage(m.chat, { react: { text: '🔗', key: m.key } })
 const handler = async (m, {conn, text}) => {
   if (!text) throw ' *ابحثـلك عن اي في اليــوتيوب🦦❓_*';
   const results = await yts(text);
