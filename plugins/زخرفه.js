@@ -33,7 +33,7 @@ function handler(m, { text }) {
 }
 handler.help = ['Nawfal']
 handler.tags = ['Nawfal']
-handler.command =  /^(زخرفة)$/i
+handler.command =  /^(زخرفة|زخرفه)$/i
 
 export default handler
 
