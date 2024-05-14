@@ -41,6 +41,6 @@ XP : *${user.exp - min}/${xp}*
 handler.help = ['levelup']
 handler.tags = ['xp']
 
-handler.command = ['لفل', 'lvl', 'levelup', 'مستواي', 'مستوا'] 
+handler.command = ['لفل', 'lvl', 'levelup', 'مستواي', 'مستوا','رانك'] 
 
 export default handler
