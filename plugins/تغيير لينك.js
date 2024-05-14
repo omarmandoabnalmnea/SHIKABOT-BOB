@@ -2,8 +2,7 @@
 
 const handler = async (m, {conn}) => {
   const revoke = await conn.groupRevokeInvite(m.chat);
-  await conn.reply(m.chat, `🔹️ *_تم تغير لينك الحروب._*\n♾ • اللنك الجديد: ${'https://chat.whatsapp.com/' + revoke}`, m);
-};
+  await conn.reply(m.chat, `🔹️ *_تم تغير لينك الحروب._*) 
 handler.command = ['resetlink', 'رستر'];
 handler.botAdmin = true;
 handler.admin = true;
